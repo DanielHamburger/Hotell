@@ -1,11 +1,12 @@
 body {
-  background-color: hsla(150, 100%, 100%, 0.5);
-  margin: 0;
+  /* background-color: hsla(150, 100%, 100%, 0.5); */
+  background-color: #315131;
 }
 
 footer {
   text-align: center;
-  color: white;
+  /* color: white; */
+  color: black;
   background-color: #FF7256;
   padding: 2.5vh 2vw;
   font-size: 1.1rem;
@@ -20,6 +21,7 @@ nav {
 
 h1, nav {
   padding: 2vh 2vw;
+  color: white;
 }
 
 h2 {
@@ -28,11 +30,10 @@ h2 {
   margin-top: revert;
 }
 
-h1, nav, article.left, article.right, article.article-right {
+/* h1, nav, article.left, article.right, article.article-right {
   border-bottom: 1px solid;
   margin: 0;
-}
-
+} */
 nav, footer, h1 {
   text-align: center;
 }
@@ -44,13 +45,7 @@ article {
   margin-right: 0%;
   margin-right: 0%;
   padding: 1vh 2vw;
-}
-
-img.denmark {
-  width: 100%;
-  max-width: 100%;
-  height: 100%;
-  object-fit: cover;
+  color: white;
 }
 
 @media only screen and (min-width: 750px) {
@@ -62,32 +57,32 @@ img.denmark {
 
 /* Nav-bar */
 .topnav {
+  background-color: #FF7256;
   overflow: hidden;
-  text-align: center;
 }
 
 .topnav a {
-  text-decoration: none;
   float: left;
   display: block;
-  color: #f2f2f2;
-  text-decoration: none;
+  /* color: #f2f2f2; */
+  color: black;
   text-align: center;
-  padding: 15px 24px;
-  font-size: 19px;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
 }
 
 .topnav a:hover {
-  box-shadow: inset 100px 0 0 0 #FFFFFF;
+  background-color: #ddd;
   color: black;
 }
 
 .topnav a.active {
   background-color: #04AA6D;
-  color: black;
+  color: white;
 }
 
-.topnav.icon {
+.topnav .icon {
   display: none;
 }
 
@@ -107,7 +102,7 @@ img.denmark {
     position: relative;
   }
 
-  .topnav.responsive .icon {
+  .topnav.responsive a.icon {
     position: absolute;
     right: 0;
     top: 0;
@@ -126,11 +121,21 @@ iframe {
   width: 30%;
 }
 
-article.right {
+.right {
   margin: 0 auto;
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section .left {
+  color: white;
+}
+
+.left {
+  border: 1px solid black;
+  margin: 10px;
+  padding: 15px;
 }
 
 /* Hitta End */
@@ -196,99 +201,109 @@ button {
 }
 
 button:hover {
-  background: #296E85;
-  /#1E5162/ -webkit-transition: background 0.3s ease-in-out;
+  background: orange;
+  -webkit-transition: background 0.3s ease-in-out;
   -moz-transition: background 0.3s ease-in-out;
   transition: background-color 0.3s ease-in-out;
 }
 
 /* Boka End */
 /* Kontakta */
-#kontakt body {
-  background: white;
-  margin: 0
-}
-
-#kontakt .form {
-  width: 340px;
-  height: 440px;
-  background: #e6e6e6;
-  border-radius: 8px;
-  box-shadow: 0 0 40px -10px #000;
-  margin: calc(50vh - 220px) auto;
-  padding: 20px 30px;
-  max-width: calc(100vw - 40px);
+* {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
-  font-family: 'Montserrat', sans-serif;
-  position: relative
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
 }
 
-#kontakt h2 {
-  margin: 10px 0;
-  padding-bottom: 10px;
-  width: 180px;
-  color: #78788c;
-  border-bottom: 3px solid #78788c
+body {
+  font-family: none;
+  font-weight: 100;
+  font-size: 16px;
+  line-height: 32px;
+  color: #000000;
 }
 
-#kontakt input {
+.container {
+  max-width: 400px;
   width: 100%;
-  padding: 10px;
-  box-sizing: border-box;
-  background: none;
-  outline: none;
-  resize: none;
-  border: 0;
-  font-family: 'Montserrat', sans-serif;
-  transition: all .3s;
-  border-bottom: 2px solid #bebed2
+  margin: 0 auto;
+  position: relative;
 }
 
-#kontakt input:focus {
-  border-bottom: 2px solid #78788c
+#contact {
+  background: #F9F9F9;
+  padding: 25px;
+  margin: 150px 0;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }
 
-#kontakt p:before {
-  content: attr(type);
+h3 {
   display: block;
-  margin: 28px 0 0;
-  font-size: 14px;
-  color: #5a5a5a
+  font-size: 30px;
+  font-weight: 300;
+  margin-bottom: 10px;
+  color: white;
 }
 
-#kontakt button {
-  float: right;
-  padding: 8px 12px;
-  margin: 8px 0 0;
-  font-family: 'Montserrat', sans-serif;
-  border: 2px solid #78788c;
-  background: 0;
-  color: #5a5a6e;
-  cursor: pointer;
-  transition: all .3s
+p {
+  color: white;
 }
 
-#kontakt button:hover {
-  background: #78788c;
-  color: #fff
-}
-
-#kontakt div {
-  content: 'Hi';
-  position: absolute;
-  bottom: -15px;
-  right: -20px;
-  background: #50505a;
-  color: #fff;
-  width: 320px;
-  padding: 16px 4px 16px 0;
-  border-radius: 6px;
+h4 {
+  margin: 5px 0 15px;
+  display: block;
   font-size: 13px;
-  box-shadow: 10px 10px 40px -14px #000
+  font-weight: 400;
 }
 
-#kontakt span {
-  margin: 0 5px 0 15px
+fieldset {
+  border: medium none;
+  margin: 0 0 10px;
+  min-width: 100%;
+  padding: 0;
+  width: 100%;
+}
+
+input, textarea {
+  width: 100%;
+  border: 1px solid #ccc;
+  background: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+}
+
+textarea {
+  height: 100px;
+  max-width: 100%;
+  resize: none;
+}
+
+button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background: #54b3d6;
+  color: #FFF;
+  margin: 0 0 5px;
+  padding: 10px;
+  font-size: 15px;
+}
+
+button:hover {
+  background: orange;
+  -webkit-transition: background 0.3s ease-in-out;
+  -moz-transition: background 0.3s ease-in-out;
+  transition: background-color 0.3s ease-in-out;
+}
+
+.number {
+  text-align: center;
 }
 
 /* Kontakta End */

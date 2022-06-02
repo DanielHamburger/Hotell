@@ -7,42 +7,55 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sunset Hotell</title>
   <link rel="stylesheet" href="styles.css">
-  <link rel="stylesheet" href="---">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 
+
 <body>
+  <header>
+    <h1>Sunset Hotell</h1>
+    <nav class="topnav" id="myTopnav">
+      <a href="index.html">Hem</a>
+      <a href="boka.html">Boka</a>
+      <a href="hitta.html">Hitta</a>
+      <a href="kontakt.html">Kontakta</a>
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+      </a>
+    </nav>
+  </header>
 
-  <body>
-    <header>
-      <h1>Sunset Hotell</h1>
-      <nav class="topnav" id="myTopnav">
-        <a href="index.html">Hem</a>
-        <a href="boka.html">Boka</a>
-        <a href="hitta.html">Hitta</a>
-        <a href="kontakt.html">Kontakta</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
-      </nav>
-    </header>
+  <main>
+    <form id="contact" class="" action="contact.html" method="post">
+      <h3>Vill du bli Kontaktad?</h3>
+      <fieldset>
+        <input type="text" placeholder="Ditt Namn" tabindex="1" required autofocus>
+      </fieldset>
+      <fieldset>
+        <input type="text" placeholder="Ditt Efternamn" tabindex="2" required>
+      </fieldset>
+      <fieldset>
+        <input type="email" placeholder="Din E-mail" tabindex="3" required>
+      </fieldset>
+      <fieldset>
+        <input type="tel" placeholder="Din Telefonnumer" tabindex="4" required>
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Skriv ditt meddelande här...." tabindex="5" required></textarea>
+      </fieldset>
+      <fieldset>
+        <button name="submit" type="submit" id="contact-submit" data-submit="...Sending">Skicka</button>
+      </fieldset>
+      <p class="number">Eller ring oss på 123-4567-8910</p>
+    </form>
+  </main>
+  <footer>
+    Østergade 46, 1100 København, Danmark
+  </footer>
 
-    <main>
-      <form class="form">
-        <h2>CONTACT US</h2>
-        <p type="Name:"><input placeholder="Write your name here.."></input></p>
-        <p type="Email:"><input placeholder="Let us know how to contact you back.."></input></p>
-        <p type="Message:"><input placeholder="What would you like to tell us.."></input></p>
-        <button>Send Message</button>
-        <div>
-          <span class="fa fa-phone"></span>001 1023 567
-          <span class="fa fa-envelope-o"></span> contact@company.com
-        </div>
-      </form>
-    </main>
-    <footer>
-      Østergade 46, 1100 København, Danmark
-    </footer>
+  <script src="script-nav.js"> </script>
 
-  </body>
+
+</body>
 
 </html>
